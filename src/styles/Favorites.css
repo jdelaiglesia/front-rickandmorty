@@ -1,0 +1,8 @@
+.favoritesDropdown {
+  width: 10vw;
+  border: 0px black solid;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgba(42, 15, 46, 0.749);
+  color: white;
+}

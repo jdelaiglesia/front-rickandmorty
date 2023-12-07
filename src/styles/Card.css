@@ -1,0 +1,74 @@
+.cardContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "Chewy", cursive;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 1vh 1vw;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cardPortalEffect {
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background-image: url("../assets/portal.png");
+  background-position: center;
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: -1;
+}
+
+.cardContainer:hover .cardPortalEffect {
+  opacity: 1;
+  transform: rotate(30deg);
+}
+
+.cardText {
+  margin: 0;
+}
+
+.cardImage {
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.cardLink {
+  text-decoration: none;
+  margin: 0;
+  text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  color: #1dd3b0;
+}
+
+.cardButton {
+  position: absolute;
+  border-radius: 0% 25% 0% 25%;
+  width: 8%;
+  height: 6%;
+  right: 3%;
+  font-family: "Chewy", cursive;
+  background-color: red;
+  color: white;
+  border: 0px solid white;
+}
+
+.favButton {
+  position: absolute;
+  border-radius: 25% 0% 25% 0%;
+  height: 6%;
+  left: 3%;
+  font-family: "Chewy", cursive;
+  text-align: center;
+  background-color: white;
+  color: white;
+  border: 0px solid white;
+}

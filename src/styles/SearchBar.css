@@ -1,0 +1,14 @@
+.searchBarInput {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 7px;
+}
+
+.searchBarButton {
+  padding: 7px;
+  margin: 0px 10px;
+  border: 1px solid #477902;
+  border-radius: 4px;
+  color: black;
+  background: #affc41;
+}

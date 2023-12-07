@@ -1,0 +1,37 @@
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(42, 15, 46, 0.75);
+  width: 100%;
+}
+
+.navbarButtonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbarButton {
+  padding: 7px;
+  margin: 0px 10px;
+}
+
+.navbarButton:hover {
+  background: #086375;
+}
+
+.navbarText {
+  text-decoration: none;
+  color: white;
+  margin: 3px;
+}
+
+.navbarCurrent {
+  border-bottom: 2px #086375 solid;
+}
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+}

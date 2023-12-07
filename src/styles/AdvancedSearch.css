@@ -1,0 +1,37 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput {
+  border: 1px solid #000;
+  padding: 7px;
+  background-color: rgba(42, 15, 46, 0.749);
+  color: white;
+  width: 15vw;
+}
+
+.searchButton {
+  padding: 7px;
+  margin: 0px 10px;
+  border: 1px solid #477902;
+  border-radius: 4px;
+  color: black;
+  background: #affc41;
+  width: 16vw;
+  margin-top: 2vh;
+}
+
+.resultsText {
+  color: white;
+}

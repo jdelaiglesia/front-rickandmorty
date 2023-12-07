@@ -1,0 +1,29 @@
+.detailContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+  height: 70vh;
+}
+
+.parallax-effect-glare-scale {
+  border-radius: 100%;
+}
+
+.detailImage {
+  object-fit: contain;
+  border-radius: 100%;
+  width: 30vw;
+}
+
+.detailText {
+  font-family: "Chewy", cursive;
+  font-size: 3vh;
+  padding-right: 20%;
+  width: 25vw;
+  color: rgba(42, 15, 46, 1);
+  text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white,
+    1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+  background-color: #1f971fbf;
+}

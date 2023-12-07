@@ -1,0 +1,7 @@
+.randomCharacterButton {
+  padding: 7px;
+  border: 1px solid rgb(61, 13, 47);
+  border-radius: 4px;
+  color: white;
+  background: rgb(90, 20, 87);
+}
