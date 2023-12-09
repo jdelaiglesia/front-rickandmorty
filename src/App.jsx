@@ -20,6 +20,8 @@ import Form from "./components/Form";
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
 
+axios.defaults.baseURL = "http://back-rickandmorty.railway.internal";
+
 const errorToast = {
   position: "top-center",
   autoClose: 5000,
@@ -55,7 +57,7 @@ function App() {
    */
   const login = async (userData) => {
     const { email, password } = userData;
-    const URL = "http://localhost:3001/rickandmorty/login";
+    const URL = "/rickandmorty/login";
     await axios(URL + `?email=${email}&password=${password}`).then(
       ({ data }) => {
         const { access } = data;
@@ -73,7 +75,7 @@ function App() {
    * Fetches the favorites from the database API and updates the global state.
    */
   const fetchFavorites = async () => {
-    const URL = "http://localhost:3001/rickandmorty/fav";
+    const URL = "/rickandmorty/fav";
     await axios
       .get(URL)
       .then(({ data }) => {

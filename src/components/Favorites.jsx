@@ -23,7 +23,7 @@ export const Favorites = ({ myFavorites }) => {
 
   useEffect(() => {
     const fetchFavorites = async () => {
-      const URL = "http://localhost:3001/rickandmorty/fav";
+      const URL = "/rickandmorty/fav";
       await axios
         .get(URL)
         .then(({ data }) => {
