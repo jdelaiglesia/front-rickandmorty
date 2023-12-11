@@ -5,7 +5,6 @@ import { useState, useMemo } from "react";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
-import Neonizer from "neonizer";
 import styled from "styled-components";
 
 import Cards from "./components/Cards";
@@ -155,24 +154,7 @@ function App() {
       {location.pathname !== "/" && (
         <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />
       )}
-      <Neonizer
-        className="neonTitle"
-        time={500}
-        excludeColors={[
-          "#1f51ff",
-          "#0ff0fc",
-          "#ff44cc",
-          "#ea00ff",
-          "#ff1493",
-          "#fff01f",
-          "#e7ee4f",
-          "#dfff00",
-          "#ff3131",
-          "#ff5e00",
-        ]}
-      >
-        Rick and Morty Character Showcase
-      </Neonizer>
+      <h1 className="neonTitle">Rick and Morty Character Showcase</h1>
       <Routes>
         <Route path="/" element={<Form login={login} />} />
         <Route
