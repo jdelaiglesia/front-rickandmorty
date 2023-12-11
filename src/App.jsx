@@ -19,7 +19,7 @@ import Form from "./components/Form";
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
 
-axios.defaults.baseURL = "http://back-rickandmorty.railway.internal";
+axios.defaults.baseURL = "http://back-rickandmorty-production.up.railway.app";
 
 const errorToast = {
   position: "top-center",

@@ -1,6 +1,7 @@
 import { ADD_FAV, REMOVE_FAV, FILTER, ORDER } from "./action-types";
 import axios from "axios";
-const URL = "http://localhost:3001/rickandmorty/fav";
+const URL =
+  "http://back-rickandmorty-production.up.railway.app/rickandmorty/fav";
 
 const addFav = (character) => {
   return async (dispatch) => {
