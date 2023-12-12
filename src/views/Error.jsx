@@ -1,9 +1,9 @@
-import error404 from "../assets/404-b057cad3.png";
+import error404 from '../assets/404.png'
 
 const Error = () => {
   return (
     <div>
-      <img src={error404} alt="" />
+        <img src={error404} alt="" />
     </div>
   );
 };
