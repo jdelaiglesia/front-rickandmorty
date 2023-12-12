@@ -1,4 +1,4 @@
-import aboutMe from "../assets/aboutMe.png";
+import aboutMe from "../assets/aboutMe-195de7d1.png";
 import Tilt from "react-parallax-tilt";
 
 import "../styles/About.css";
