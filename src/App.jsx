@@ -16,7 +16,11 @@ import Favorites from "./components/Favorites";
 import AdvancedSearch from "./components/AdvancedSearch";
 import Form from "./components/Form";
 
-import "./App.css";
+if (process.env.VERCEL === "1") {
+  import("./AppVercel.css");
+} else {
+  import("./AppLocal.css");
+}
 import "react-toastify/dist/ReactToastify.css";
 
 axios.defaults.baseURL = "https://back-rickandmorty.vercel.app";

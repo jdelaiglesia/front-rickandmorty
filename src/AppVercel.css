@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-image: url("/backgrounds/1.jpg");
+}
+
+.neonTitle {
+  font-family: "Chewy", cursive;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+@keyframes shake {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
