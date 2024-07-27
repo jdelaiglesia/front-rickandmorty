@@ -54,6 +54,14 @@ function App() {
   const location = useLocation();
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    if (process.env.VERCEL === "1") {
+      import("./AppVercel.css");
+    } else {
+      import("./AppLocal.css");
+    }
+  }, []);
+
   /**
    * Handles user login.
    * @param {Object} userData - User data containing email and password.
