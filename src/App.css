@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("src/assets/backgrounds/1.jpg");
+  background-image: url("./src/assets/backgrounds/1.jpg");
 }
 
 .neonTitle {
