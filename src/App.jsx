@@ -19,7 +19,7 @@ import Form from "./components/Form";
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
 
-axios.defaults.baseURL = "https://back-rickandmorty-production.up.railway.app";
+axios.defaults.baseURL = "https://back-rickandmorty.vercel.app";
 
 const errorToast = {
   position: "top-center",
@@ -56,18 +56,19 @@ function App() {
    */
   const login = async (userData) => {
     const { email, password } = userData;
-    const URL = "/rickandmorty/login";
-    await axios(URL + `?email=${email}&password=${password}`).then(
-      ({ data }) => {
-        const { access } = data;
-        setAccess(access);
-        if (access) {
-          access && navigate("/home");
-        } else {
-          toast.error("Usuario y/o contraseña inválidos", errorToast);
-        }
-      }
-    );
+    // const URL = "/rickandmorty/login";
+    // await axios(URL + `?email=${email}&password=${password}`).then(
+    //   ({ data }) => {
+    //     const { access } = data;
+    //     setAccess(access);
+    //     if (access) {
+    //       access && navigate("/home");
+    //     } else {
+    //       toast.error("Usuario y/o contraseña inválidos", errorToast);
+    //     }
+    //   }
+    // );
+    setAccess(true);
   };
 
   /**
@@ -151,12 +152,16 @@ function App() {
 
   return (
     <AppTag className="App">
-      {location.pathname !== "/" && (
-        <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />
-      )}
+      {/* {location.pathname !== "/" && ( */}
+      <Nav onSearch={onSearch} addRandomCharacter={addRandomCharacter} />
+      {/* )} */}
       <h1 className="neonTitle">Rick and Morty Character Showcase</h1>
       <Routes>
-        <Route path="/" element={<Form login={login} />} />
+        {/* <Route path="/" element={<Form login={login} />} /> */}
+        <Route
+          path="/"
+          element={<Cards characters={characters} onClose={onClose} />}
+        />
         <Route
           path="/home"
           element={<Cards characters={characters} onClose={onClose} />}
